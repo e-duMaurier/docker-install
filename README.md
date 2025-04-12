@@ -16,7 +16,7 @@ This script automates the installation of **Docker**, **Portainer-CE**, and **Ng
 ### 1. Clone or Download the Script
 You can clone this repository or copy the script to your VPS.
 ```bash
-git clone https://github.com/e-duMaurier/docker-setup.git
+git clone https://github.com/e-duMaurier/docker-install.git
 ```
 
 ### 2. Run the Script
