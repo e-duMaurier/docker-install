@@ -72,7 +72,7 @@ if [[ -f "$COMPOSE_FILE_PORTAINER" ]]; then
     cp "$COMPOSE_FILE_PORTAINER" docker-compose.yml >> ~/script-install.log 2>&1
 else
     echo "Local compose file not found, downloading from repository..." >> ~/script-install.log 2>&1
-    curl -sSL https://github.com/e-duMaurier/docker-install/blob/main/docker-compose_portainer-ce.yml -o docker-compose.yml >> ~/script-install.log 2>&1
+    curl -sSL https://raw.githubusercontent.com/e-duMaurier/docker-install/blob/main/docker-compose_portainer-ce.yml -o docker-compose.yml >> ~/script-install.log 2>&1
 fi
 
 sudo docker compose up -d >> ~/script-install.log 2>&1
@@ -90,7 +90,7 @@ if [[ -f "$COMPOSE_FILE_NGINX" ]]; then
     cp "$COMPOSE_FILE_NGINX" docker-compose.yml >> ~/script-install.log 2>&1
 else
     echo "Local compose file not found, downloading from repository..." >> ~/script-install.log 2>&1
-    curl -sSL https://github.com/e-duMaurier/docker-install/blob/main/docker-compose_nginx-proxy-manager.yml -o docker-compose.yml >> ~/script-install.log 2>&1
+    curl -sSL https://raw.githubusercontent.com/e-duMaurier/docker-install/blob/main/docker-compose_nginx-proxy-manager.yml -o docker-compose.yml >> ~/script-install.log 2>&1
 fi
 
 sudo docker compose up -d >> ~/script-install.log 2>&1
